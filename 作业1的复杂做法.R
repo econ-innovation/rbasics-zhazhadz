@@ -1,5 +1,5 @@
-file_path <- "E:/数据分析/1_1Yuanbo Zhang_aminer.cnprofileyuanbo-zhang542a4624dabfae864af93d5f.csv" 
-csv_data <- read.csv(file_path, header = TRUE, stringsAsFactors = FALSE, na.strings = "", fill = TRUE)
+file_path <- E:/数据分析/1_1Yuanbo Zhang_aminer.cnprofileyuanbo-zhang542a4624dabfae864af93d5f.csv
+csv_data <- read.csv(file_path, header = TRUE, stringsAsFactors = FALSE, na.strings = , fill = TRUE)
 nrow(csv_data)
 ncol(csv_data)
 # 创建一个空的行向量，用于存储列名
@@ -20,10 +20,10 @@ column_data_list <- list()
 
 for (i in 1:ncol(csv_data)) {
   column_data <- csv_data[[i]]  # 选择第 i 列的数据并将其作为向量存储
-  
+
   # 将每列数据存储到列表中
   column_data_list[[i]] <- column_data
-  
+
   # 打印每列数据
   print(column_data)
 }
